@@ -1,17 +1,14 @@
 import React, { useRef, useState } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import backgroundVideo from "../data/video.mp4";
 import { Box, Container } from "@mui/material";
 import Navbar from "../components/Navbar";
 import Homepage from "../components/homepage";
-// import Solution from "../pages/Solution";
-// import RequestDemo from "../pages/RequestDemo";
 import Cardhover from "../components/Cardhover";
 import backgroundImage from "../data/pic2.jpg";
 import backgroundImage2 from "../data/pic1.jpg";
 import backgroundImage3 from "../data/pic3.jpg";
 import backgroundImage4 from "../data/pic4.jpg";
-import { LocalShipping } from "@mui/icons-material";
 import SimplyfySTMS from "../components/SimplyfySTMS";
 import "../App.css";
 import Managment from "../components/Managment";
@@ -64,7 +61,7 @@ const Mainpage = () => {
             <Link path="/"  />
             <Link path="/solution"  />
             <Link path="/request-demo"  />
-            <Homepage/>
+            <Homepage title="Freightro | The STMS" description="Supply Chain Optimization Through Network Collaboration"/>
         </Box>
       </Box>
       <Box sx={{ backgroundColor: "rgb(26, 49, 54)" }}>

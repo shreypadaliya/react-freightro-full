@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Button, Container, Typography } from "@mui/material";
 
-const Homepage = () => {
+const Homepage = ({title,description}) => {
   return (
     <>
       <Container maxWidth="lg">
@@ -19,7 +19,7 @@ const Homepage = () => {
               fontWeight:800,
             }}
           >
-            Freightro | The STMS
+            {title}
           </Typography>
           <Box>
             <Box
@@ -34,7 +34,7 @@ const Homepage = () => {
                 fontWeight:800,
               }}
             >
-              Supply Chain Optimization Through Network Collaboration
+              {description}
             </Box>
             <Box sx={{ marginTop: "20px", marginBottom: "20px" }}>
               <Button
