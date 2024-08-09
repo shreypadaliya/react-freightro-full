@@ -3,7 +3,8 @@ import React from "react";
 
 function Cardhover({
   image,
-  icon: Icon,
+  // icon: Icon,
+  image2,
   title,
   description,
   onMouseEnter,
@@ -65,17 +66,28 @@ function Cardhover({
             bottom: "60px",
             width: "80%",
             // marginInline: "75px",
-            marginLeft:{xs:"25px",sm:"40px",md:"55px",lg:"75px"},
-            marginRight:{xs:"25px",sm:"40px",md:"55px",lg:"75px"},
+            marginLeft: { xs: "25px", sm: "40px", md: "55px", lg: "75px" },
+            marginRight: { xs: "25px", sm: "40px", md: "55px", lg: "75px" },
             opacity: isHovered ? 0 : 1, // Hide content when another card is hovered
             transition: "opacity 0.3s ease", // Smooth transition for opacity change
           }}
         >
+          {/* <Box sx={{ marginBottom: "15px" }}>
+            <image2 sx={{ color: "yellow", fontSize: "3rem",height:"10px",width:"10px" }} />
+          </Box> */}
           <Box sx={{ marginBottom: "15px" }}>
-            <Icon sx={{ color: "yellow", fontSize: "3rem" }} />
+            <img
+              src={image2} // Use the image URL passed as a prop
+              alt="Description"
+              style={{ color: "yellow", height: "50px", width: "50px" }} // Note: `color` does not affect images
+            />
           </Box>
           <Box
-            sx={{ color: "white", fontSize: {xs:"2.0rem",sm:"2.5rem",md:"3.0rem"}, marginBottom: "10px" }}
+            sx={{
+              color: "white",
+              fontSize: { xs: "2.0rem", sm: "2.5rem", md: "3.0rem" },
+              marginBottom: "10px",
+            }}
           >
             {title}
           </Box>
