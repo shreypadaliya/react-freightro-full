@@ -1,0 +1,12 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.perent:hover .boxmain2{
+  display: none;
+}
+
+.perent:hover .boxmain2:hover{
+  display: block;
+}
